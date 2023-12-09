@@ -6,12 +6,15 @@
     box-sizing: border-box;
     font-family: 'poppins', sans-serif;
 }
+body{
+   overflow: hidden;
+}
 
 section
 {
     position: relative;
     width: 100%;
-    min-height: 100vh;
+    height: 100vh;
     padding: 100px;
     display: flex;
     justify-content: space-between;
@@ -26,10 +29,11 @@ header
     top: 0;
     left: 0;
     width: 100%;
-    padding: 20px 100px;
+    padding: 0px 100px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    /* background: #000; */
 
 }
 
@@ -37,7 +41,12 @@ header .logo
 {
     position: relative;
     max-width: 80px;
+    padding: 20px 0px;
+
     
+}
+header img{
+    width: 56px;
 }
 
 header ul
@@ -58,9 +67,12 @@ header ul li a
     font-weight: 400;
     margin-left: 40px;
     text-decoration: none;
+    transition: color 0.3s ;
 }
-
-
+header ul li a:hover{
+    color: #017143;
+    border-bottom: 1.5px solid #017143;
+}
 .content 
 {
     position: relative;
@@ -117,7 +129,7 @@ header ul li a
     display: flex;
     justify-content: flex-end;
     padding-right: 50px;
-    margin-top: 50px;
+    /* margin-top: 50px; */
 }
 
 .content .imgBox img
